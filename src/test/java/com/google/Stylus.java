@@ -11,6 +11,7 @@ public class Stylus extends WebDriverTestBase {
     private String domain = "http://stylus.com.ua/";
     private String searchresult = "Sony Z2";
 
+
 @Test
     public void styolusMagaz(){
     webDriver.get(domain);
@@ -22,8 +23,8 @@ public class Stylus extends WebDriverTestBase {
     stylusNaitiButton.setNaitiButton();
 
 
-    StylusVerify stylusVerify = new StylusVerify();
-    Assert.assertTrue(stylusVerify.getcontent().getAttribute(searchresult).contains(searchresult));
+    StylusVerify stylusVerify = new StylusVerify(webDriver);
+    Assert.assertTrue(stylusVerify.getLink().getText(). contains(searchresult));
 
 
 }
