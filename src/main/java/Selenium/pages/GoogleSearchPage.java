@@ -15,7 +15,7 @@ import java.io.IOException;
 public class GoogleSearchPage extends AbstractPages{
 
 //    By searchLocator = By.xpath("//*[@id='lst-ib']");
-    By searchLocator = By.xpath("//*[@id='lst']"); //wrong Xpath for ScreenShots
+    By searchLocator = By.xpath("//*[@id=\"lst-ib\"]"); //wrong Xpath for ScreenShots
     private WebElement searchField;
 
 
