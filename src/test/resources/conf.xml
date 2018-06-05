@@ -1,0 +1,14 @@
+<suite name="UI tests" verbose="1">
+    <tests>
+        <test name="Chrome">
+            <!--<classes>-->
+                <!--<class name="com.google.GoogleSearchTest" />-->
+                <!--<class name="com.google.Gmail" />-->
+            <!--</classes>-->
+            <packages>
+                <package name="com.google" />
+            </packages>
+
+        </test>
+    </tests>
+</suite>

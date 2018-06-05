@@ -1,5 +1,6 @@
 package Selenium.core;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -29,14 +30,23 @@ public class TestListener implements ITestListener{
     @Override
     public void onTestFailure(ITestResult iTestResult) {
        webDriver  = ((WebDriverTestBase)iTestResult.getInstance()).webDriver;
-        File scrFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(scrFile,
-                    new File("c:\\failed\\" + (iTestResult.getMethod().getQualifiedName()+".png")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+       saveScreenshot(iTestResult.getMethod().getQualifiedName());
+//        File scrFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
+//        try {
+//            FileUtils.copyFile(scrFile,
+//                    new File("c:\\failed\\" + (iTestResult.getMethod().getQualifiedName()+".png")));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+    }
 
+    private void setSaveScreenshot(String qualifiedName) {
+    }
+
+    @Attachment
+            (value = "{0}", type = "image/png")
+    public byte[] saveScreenshot(String attachName){
+        return ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.BYTES);
     }
 
     @Override

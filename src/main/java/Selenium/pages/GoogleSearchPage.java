@@ -1,6 +1,7 @@
 package Selenium.pages;
 
 import Selenium.core.WebDriverTestBase;
+import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,7 +25,7 @@ public class GoogleSearchPage extends AbstractPages{
         super(webDriver);
 
        }
-
+@Step("Ввод текста в поле поиска")
     public void search(String searchText) {
         searchField = wait.until(ExpectedConditions.elementToBeClickable(searchLocator));
         searchField.sendKeys(searchText);

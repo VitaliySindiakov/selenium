@@ -57,8 +57,6 @@ public class ThomasHome extends AbstractPages {
     public void clickAfterText(){
         WebElement clickText = webDriver.findElement(By.xpath("//*[@id=\"SearchbarForm-originContainer\"]/div/div/div/tc-typeahead/div/div[2]"));
         clickText.click();
-
-
     }
 
     public void setSearchFrameWhereTo() {
