@@ -1,4 +1,4 @@
-package Selenium.Home.GooglePages;
+package Selenium.GooglePages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

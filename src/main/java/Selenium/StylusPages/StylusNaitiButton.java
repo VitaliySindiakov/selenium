@@ -1,4 +1,4 @@
-package Selenium.Home.StylusPages;
+package Selenium.StylusPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

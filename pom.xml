@@ -12,6 +12,7 @@
         <allure-testng.version>2.0-BETA21</allure-testng.version>
         <aspectj.version>1.8.13</aspectj.version>
         <maven.surefire.plugin>2.20.1</maven.surefire.plugin>
+        <io.cucumber.version>2.3.1</io.cucumber.version>
     </properties>
     <build>
 
@@ -35,7 +36,6 @@
                      <!-- -:javaagent"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
                     <!--</argLine>-->
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/conf.xml</suiteXmlFile>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
@@ -44,6 +44,16 @@
     </build>
 
 <dependencies>
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>${io.cucumber.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-testng</artifactId>
+        <version>${io.cucumber.version}</version>
+    </dependency>
 
     <dependency>
         <groupId>io.github.bonigarcia</groupId>

@@ -1,4 +1,4 @@
-package com.google;
+package com.runnersPages;
 
 import Selenium.core.WebDriverTestBase;
 import org.openqa.selenium.By;

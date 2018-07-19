@@ -1,4 +1,4 @@
-package com.google;
+package com.runnersPages;
 
 import Selenium.core.PropertiesCache;
 import Selenium.core.WebDriverTestBase;

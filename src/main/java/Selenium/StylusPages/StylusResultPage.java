@@ -1,4 +1,4 @@
-package Selenium.Home.StylusPages;
+package Selenium.StylusPages;
 
 public class StylusResultPage {
 

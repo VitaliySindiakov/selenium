@@ -25,7 +25,7 @@ public class GoogleSearchPage extends AbstractPages{
         super(webDriver);
 
        }
-@Step("Ввод текста в поле поиска")
+@Step("Ввод текста в поле поиска - Selenium")
     public void search(String searchText) {
         searchField = wait.until(ExpectedConditions.elementToBeClickable(searchLocator));
         searchField.sendKeys(searchText);

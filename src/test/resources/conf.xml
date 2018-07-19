@@ -2,11 +2,11 @@
     <tests>
         <test name="Chrome">
             <!--<classes>-->
-                <!--<class name="com.google.GoogleSearchTest" />-->
-                <!--<class name="com.google.Gmail" />-->
+                <!--<class name="GoogleSearchTest" />-->
+                <!--<class name="Gmail" />-->
             <!--</classes>-->
             <packages>
-                <package name="com.google" />
+                <package name="com.google"></package>
             </packages>
 
         </test>
